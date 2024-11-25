@@ -1,4 +1,4 @@
-## 进入到项目根目录下面
+## 首先进入到项目根目录下面
 ```bash
 cd /data1/graphrag_project
 ```
