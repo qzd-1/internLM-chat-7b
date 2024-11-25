@@ -157,7 +157,7 @@ Donald J. Trump: Frequently discussed in relation to his political activities...
 - `PROMPTS["global_reduce_rag_response"]` 是全局搜索生成的系统提示模板。
 - `PROMPTS["fail_response"]` 是当没有任何内容与用户查询相关时的后备响应。
 
-[prompt自动调优](./doc/prompt_tune.md)，根据输入文本数据以及与LLM交互得到领域适配后的提示。
+[prompt自动领域适配](https://microsoft.github.io/graphrag/prompt_tuning/auto_prompt_tuning/)，根据输入文本数据以及与LLM交互得到领域适配后的提示。
 </details>
 
 <details>
