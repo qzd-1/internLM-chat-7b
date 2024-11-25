@@ -281,6 +281,7 @@ You can refer to an [example](./examples/using_local_embedding_model.py) that us
 
 ## 评测
 
-- [常见任务的评测教程](./doc/eval_for_infer_global_sf.md)。
+目前暂定构建五个子任务评测集，分别是：简单事实类、推理类、全文理解类、跨文档类、拒答类
+- [常见任务的评测教程（简单事实、推理、全文理解）](./doc/eval_for_infer_global_sf.md)。
 - [多跳任务的评测教程](./doc/eval_for_multihop.md)。
-
+- [拒答类]（开发ing）
