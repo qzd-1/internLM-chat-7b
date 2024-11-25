@@ -75,9 +75,9 @@ print(rag.query(
 </details>
 
 
-### Async
+### 异步
 
-For each method `NAME(...)` , there is a corresponding async method `aNAME(...)`
+对于每个方法 `NAME(...)` , 都有一个相应的异步方法 `aNAME(...)`
 
 ```python
 await graph_func.ainsert(...)
