@@ -71,7 +71,7 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
 ```
 > ### Note
 > 从 3.0.0 版本开始，在配置文件中添加的 Storage 节点无法直接生效，配置文件的作用仅仅是将 Storage 节点注册到 Meta 服务中。必须使用 `ADD HOSTS` 命令后，才能正常读写 Storage 节点。
-> 方式一：
+> 方式一：在连接池中得到会话之后执行ADD HOSTS命令
 > ```python
 > ip = "127.0.0.1"
 > port = 9669
@@ -79,8 +79,12 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
 > self.connection_pool = ConnectionPool()
 > assert self.connection_pool.init([(ip, port)], config)
 > self.session = self.connection_pool.get_session('root', 'nebula')
+> # 执行ADD HOSTS命令
+> resp = session.execute('ADD HOSTS 127.0.0.1:9559')
+> resp = session.execute('ADD HOSTS 127.0.0.1:9779')
 > ```
 
+> 方式二：安装 [nebula-console](./docs/nebula-console.md)后，启动服务之后并执行ADD HOSTS命令。
 
 
 
