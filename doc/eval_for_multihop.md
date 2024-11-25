@@ -6,6 +6,7 @@
     ```
     
 2. 构建多跳评测集pipeline（参考[MultiHop](https://arxiv.org/abs/2401.15391)论文）
+
    ![pipeline](../image/multihop.png)
     ```bash
     sh gen_data_multihop.sh
