@@ -74,12 +74,11 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
 > 方式一：
 > ```python
 > ip = "127.0.0.1"
-  port = 9669
-  # 配置
-  config = Config()
-  self.connection_pool = ConnectionPool()
-  assert self.connection_pool.init([(ip, port)], config)
-  self.session = self.connection_pool.get_session('root', 'nebula')
+> port = 9669
+> config = Config()
+> self.connection_pool = ConnectionPool()
+> assert self.connection_pool.init([(ip, port)], config)
+> self.session = self.connection_pool.get_session('root', 'nebula')
 > ```
 
 
