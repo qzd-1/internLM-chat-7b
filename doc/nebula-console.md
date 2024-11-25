@@ -34,39 +34,9 @@
     2021/03/15 15:21:43 [INFO] connection pool is initialized successfully
     Welcome to NebulaGraph!
     ```
-### From Source Code
 
-1. Build NebulaGraph Console
-
-    To build NebulaGraph Console, make sure that you have installed [Go](https://golang.org/doc/install).
-
-    Run the following command to examine if Go is installed on your machine.
-
+3. 增加 Storage 主机
     ```bash
-    $ go version
-    ```
-
-    The version should be newer than 1.13.
-
-    Use Git to clone the source code of NebulaGraph Console to your host.
-
-    ```bash
-    $ git clone https://github.com/vesoft-inc/nebula-console
-    ```
-
-    Run the following command to build NebulaGraph Console.
-
-    ```bash
-    $ cd nebula-console
-    $ make
-    ```
-    You can find a binary named `nebula-console`.
-
-2. Connect to NebulaGraph
-
-    To connect to your Nebula Graph services, use the following command.
-
-    ```bash
-    $ ./nebula-console -addr <ip> -port <port> -u <username> -p <password>
-        [-t 120] [-e "nGQL_statement" | -f filename.nGQL]
+    nebula> ADD HOSTS 127.0.0.1:9559;
+    nebula> ADD HOSTS 127.0.0.1:9779;
     ```
