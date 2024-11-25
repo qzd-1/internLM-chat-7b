@@ -5,7 +5,7 @@
     sh split_txt.sh
     ```
     
-2. 构建多跳评测集pipeline[构建多跳评测集pipeline](./image/)（参考[MultiHop](https://arxiv.org/abs/2401.15391)论文）
+2. 构建多跳评测集pipeline[构建多跳评测集pipeline](./image/multihop.png)（参考[MultiHop](https://arxiv.org/abs/2401.15391)论文）
     ```bash
     sh gen_data_multihop.sh
     ```
