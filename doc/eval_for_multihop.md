@@ -17,4 +17,4 @@
     ```bash
     sh eval.sh
     ```
-    > 其中multihop要设置为True，我们使用LLM as a Judge技术得到评测集的准确率，其中使用的大模型api跟graphrag一致。
+    > 其中multihop要设置为True，我们使用LLM as a Judge技术得到评测集的准确率，评测模型是Qwen2.5-7B-Instruct-GPTQ-Int8
