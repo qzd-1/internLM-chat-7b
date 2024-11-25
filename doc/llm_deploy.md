@@ -13,7 +13,7 @@ pip install -e ".[torch,metrics]"
 
 下面是一个配置文件的示例：
 ```yaml
-model_name_or_path: Qwen2.5-7B-Instruct-GPTQ-Int8
+model_name_or_path: /data1/graphrag_project/plms/llm_model/Qwen2.5-7B-Instruct-GPTQ-Int8
 template: qwen
 ```
 #### vllm推理框架
