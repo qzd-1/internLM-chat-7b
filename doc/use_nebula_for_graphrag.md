@@ -86,7 +86,7 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
 > resp = session.execute('ADD HOSTS 127.0.0.1:9779')
 > ```
 
-> 方式二：安装 [nebula-console](./docs/nebula-console.md)后，启动服务之后并执行ADD HOSTS命令。
+> 方式二：安装 [nebula-console](./nebula-console.md)后，启动服务之后并执行ADD HOSTS命令。
 
 
 
