@@ -16,7 +16,7 @@ pip install -e ".[torch,metrics]"
 model_name_or_path: Qwen2.5-7B-Instruct-GPTQ-Int8
 template: qwen
 ```
-### vllm推理框架
+#### vllm推理框架
 若使用vllm推理框架，请在配置中指定： `infer_backend` 与 `vllm_enforce_eager`。
 ```yaml
 model_name_or_path: /data1/graphrag_project/plms/llm_model/Qwen2.5-7B-Instruct-GPTQ-Int8
