@@ -96,7 +96,7 @@ await graph_func.aquery(...)
 
 | Type            |                             What                             |                       Where                       |
 | :-------------- | :----------------------------------------------------------: | :-----------------------------------------------: |
-| LLM             |                      Qwen `llama-factory`                    |   Built-in(default/[doc](./docs/llm_deploy.md))   |
+| LLM             |                      Qwen `llama-factory`                    |   Built-in(default/[doc](./doc/llm_deploy.md))   |
 |                 |                            OpenAI                            |                     Built-in                      |
 |                 |                           DeepSeek                           |              [examples](./examples)               |
 | Embedding       |                Bce-base(Sentence-transformers)               |                 Built-in(default)                 |
