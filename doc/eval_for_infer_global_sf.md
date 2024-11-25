@@ -16,4 +16,4 @@
     ```bash
     sh eval.sh
     ```
-    > 我们使用LLM as a Judge技术得到评测集的准确率，其中使用的大模型api跟graphrag是一样的。
+    > 我们使用LLM as a Judge技术得到评测集的准确率，其中使用的大模型api跟graphrag一致。
