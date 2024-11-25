@@ -1,4 +1,4 @@
-## 安装nebula-consle
+# 安装nebula-consle
 
 1.在构建nebula-console之前首先确保已经安装好了[Go](https://go.dev/doc/install)
 
