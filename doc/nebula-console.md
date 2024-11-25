@@ -1,6 +1,6 @@
 # 安装nebula-consle
 
-1.构建nebula-console
+1. 构建nebula-console
     在构建nebula-console之前首先确保已经安装好了[Go](https://go.dev/doc/install)
 
     运行以下命令检查您的计算机上是否安装了 Go。
@@ -39,8 +39,6 @@
 1. Build NebulaGraph Console
 
     To build NebulaGraph Console, make sure that you have installed [Go](https://golang.org/doc/install).
-
-    > NOTE: Go version provided with apt on ubuntu is usually "outdated".
 
     Run the following command to examine if Go is installed on your machine.
 
