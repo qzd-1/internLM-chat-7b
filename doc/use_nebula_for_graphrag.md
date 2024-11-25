@@ -70,7 +70,17 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
 [INFO] nebula-storaged(33fd35e): Running as 29147, Listening on 9779
 ```
 > ### Note
-> 正常启动 NebulaGraph 后，`nebula-storaged` 进程的端口显示为空白。这是因为 `nebula-storaged` 在启动流程中会等待 `nebula-metad` 添加当前 Storage 服务。当当前 Storage 服务收到 Ready 信号后才会正式注册服务。从 3.0.0 版本开始，在配置文件中添加的 Storage 节点无法直接生效，配置文件的作用仅仅是将 Storage 节点注册到 Meta 服务中。必须使用 `ADD HOSTS` 命令后，才能正常读写 Storage 节点。更多信息，参见 [配置 Storage 主机](https://docs.nebula-graph.io/)。
+> 从 3.0.0 版本开始，在配置文件中添加的 Storage 节点无法直接生效，配置文件的作用仅仅是将 Storage 节点注册到 Meta 服务中。必须使用 `ADD HOSTS` 命令后，才能正常读写 Storage 节点。
+> 方式一：
+> ```python
+> ip = "127.0.0.1"
+  port = 9669
+  # 配置
+  config = Config()
+  self.connection_pool = ConnectionPool()
+  assert self.connection_pool.init([(ip, port)], config)
+  self.session = self.connection_pool.get_session('root', 'nebula')
+> ```
 
 
 
