@@ -28,10 +28,47 @@ sudo rpm -ivh nebula-graph-3.8.0.el7.x86_64.rpm
 ## 启动NebulaGraph:
 使用脚本管理服务
 使用脚本 `nebula.service` 管理服务，包括启动、停止、重启、中止和查看。
+> `nebula.service` 的默认路径是 `/usr/local/nebula/scripts`，如果修改过安装路径，请使用实际路径。
 
+语法：
+#### 启动nebulagraph服务：
+```bash
+$ sudo /usr/local/nebula/scripts/nebula.service start all
+[INFO] Starting nebula-metad...
+[INFO] Done
+[INFO] Starting nebula-graphd...
+[INFO] Done
+[INFO] Starting nebula-storaged...
+[INFO] Done
+```
 
+#### 停止nebaldgraph服务：
+> [Danger]
+> 请勿使用kill -9 命令强制终止进程，否则可能较小概率出现数据丢失。
+```bash
+$ sudo /usr/local/nebula/scripts/nebula.service stop all
+[INFO] Stopping nebula-metad...
+[INFO] Done
+[INFO] Stopping nebula-graphd...
+[INFO] Done
+[INFO] Stopping nebula-storaged...
+[INFO] Done
+```
 
+#### 查看 NebulaGraph 服务:
+```bash
+$ sudo /usr/local/nebula/scripts/nebula.service status all
+```
 
+如果返回如下结果，表示 NebulaGraph 服务正常运行。
+
+```text
+[INFO] nebula-metad(33fd35e): Running as 29020, Listening on 9559
+[INFO] nebula-graphd(33fd35e): Running as 29095, Listening on 9669
+[WARN] nebula-storaged after v3.0.0 will not start service until it is added to cluster.
+[WARN] See Manage Storage hosts: ADD HOSTS in https://docs.nebula-graph.io/
+[INFO] nebula-storaged(33fd35e): Running as 29147, Listening on 9779
+```
 
 
 
