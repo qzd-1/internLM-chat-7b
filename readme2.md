@@ -104,9 +104,9 @@ await graph_func.aquery(...)
 | Vector DataBase |  [`milvus-lite`](https://github.com/milvus-io/milvus-lite)   |                 Built-in(default)                 |
 |                 |        [`hnswlib`](https://github.com/nmslib/hnswlib)        |         Built-in, [examples](./examples)          |
 |                 | [faiss](https://github.com/facebookresearch/faiss?tab=readme-ov-file) |              [examples](./examples)               |
-| Graph Storage   |       [`nebula`](https://github.com/vesoft-inc/nebula)       | Built-in(default/[doc](./docs/use_nebula_for_graphrag.md)) |
+| Graph Storage   |       [`nebula`](https://github.com/vesoft-inc/nebula)       | Built-in(default/[doc](./doc/use_nebula_for_graphrag.md)) |
 |                 | [`networkx`](https://networkx.org/documentation/stable/index.html) |                     Built-in                      |
-|                 |                [`neo4j`](https://neo4j.com/)                 | Built-in([doc](./docs/use_neo4j_for_graphrag.md)) |
+|                 |                [`neo4j`](https://neo4j.com/)                 | Built-in([doc](./doc/use_neo4j_for_graphrag.md)) |
 | Chunking        |                        by token size                         |                     Built-in                      |
 |                 |                       by text splitter                       |                     Built-in                      |
 |                 |                by recursivecharacter splitter                |                     Built-in                      |
@@ -270,7 +270,7 @@ You can refer to an [example](./examples/using_local_embedding_model.py) that us
 
 **`base.BaseGraphStorage` 用于存储知识图谱**
 
-- 默认使用 [`nebula`](https://github.com/vesoft-inc/nebula) 作为后端，完整流程请查看[教程](./docs/use_nebula_for_graphrag.md)。
+- 默认使用 [`nebula`](https://github.com/vesoft-inc/nebula) 作为后端，完整流程请查看[教程](./doc/use_nebula_for_graphrag.md)。
 - `GraphRAG(.., graph_storage_cls=YOURS,...)`
 
 您可以参考 `nano_graphrag.base` 查看各个组件的详细接口.
@@ -280,6 +280,6 @@ You can refer to an [example](./examples/using_local_embedding_model.py) that us
 
 ## 评测
 
-- [常见任务的评测教程](./docs/eval_for_infer_global_sf.md)。
-- [多跳任务的评测教程](./docs/eval_for_multihop.md)。
+- [常见任务的评测教程](./doc/eval_for_infer_global_sf.md)。
+- [多跳任务的评测教程](./doc/eval_for_multihop.md)。
 
