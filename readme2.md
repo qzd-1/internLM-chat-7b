@@ -87,7 +87,7 @@ await graph_func.aquery(...)
 
 ### 可用参数
 
-`GraphRAG` 和 `QueryParam` 是 Python 中的 `dataclass`。使用 `help(GraphRAG)` 和 `help(QueryParam)` 查看所有可用参数！或者查看 [进阶](### 进阶) 部分以查看一些选项。
+`GraphRAG` 和 `QueryParam` 是 Python 中的 `dataclass`。使用 `help(GraphRAG)` 和 `help(QueryParam)` 查看所有可用参数！或者查看[进阶](#进阶) 部分以查看一些选项。
 
 
 ## 可自定义的组件
@@ -113,7 +113,7 @@ await graph_func.aquery(...)
 
 - `Built-in` 代表内部是有实现的。 `examples` 代表我们是在 [examples](./examples) 文件夹下面实现。
 
-## c
+## 进阶
 
 
 <details>
