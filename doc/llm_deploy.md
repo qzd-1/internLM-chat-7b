@@ -29,3 +29,11 @@ vllm_maxlen: 32768
 下面是一个启动并调用 api 服务的示例：
 
 首先进入到LLaMA-Factory文件夹下面，您可以使用 `API_PORT=8000 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/qwen2.5_vllm.yaml` 启动 api 服务并运行以下示例程序进行调用：
+```python
+# api_call_example.py
+from openai import OpenAI
+client = OpenAI(api_key="0",base_url="http://0.0.0.0:8000/v1")
+messages = [{"role": "user", "content": "Who are you?"}]
+result = client.chat.completions.create(messages=messages, model="meta-llama/Meta-Llama-3-8B-Instruct")
+print(result.choices[0].message)
+```
