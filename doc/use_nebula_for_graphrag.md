@@ -69,8 +69,10 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
 [WARN] See Manage Storage hosts: ADD HOSTS in https://docs.nebula-graph.io/
 [INFO] nebula-storaged(33fd35e): Running as 29147, Listening on 9779
 ```
+
 > ### Note
 > 从 3.0.0 版本开始，在配置文件中添加的 Storage 节点无法直接生效，配置文件的作用仅仅是将 Storage 节点注册到 Meta 服务中。必须使用 `ADD HOSTS` 命令后，才能正常读写 Storage 节点。
+
 > 方式一：在连接池中得到会话之后执行ADD HOSTS命令
 > ```python
 > ip = "127.0.0.1"
