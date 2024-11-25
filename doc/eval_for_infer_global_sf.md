@@ -1,5 +1,5 @@
 # 常见任务的评测集构建
-1. 首先使用跟nano-graphrag一样的split逻辑对指定路径（input_dir）下所有txt文档进行chunk
+1. 首先使用跟nano-graphrag一致的split逻辑对指定路径（input_dir）下所有txt文档进行chunk
     ```bash
     cd graphrag-project/graphrag/nano-graphrag/generate-data
     sh split_txt.sh
