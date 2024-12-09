@@ -30,7 +30,7 @@
     要连接到 Nebula Graph 服务，请使用以下命令。
 
     ```bash
-    $./nebula-console -addr=192.168.10.111 -port 9669 -u root -p nebula
+    $./nebula-console -addr=127.0.0.1 -port 9669 -u root -p nebula
     2021/03/15 15:21:43 [INFO] connection pool is initialized successfully
     Welcome to NebulaGraph!
     ```
